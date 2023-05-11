@@ -5,7 +5,10 @@ const app = express();
 app.use(express.json());
 
 // Array to store the books
-let books = [];
+let books = [{ id: 1105202301, title: "Book1", author : "Md. Salim", publishedDate : "11-05-2023" },
+    { id: 1105202302, title: "Book2", author : "Md. Salim", publishedDate : "11-05-2023" },
+    { id: 1105202303, title: "Book3", author : "Md. Salim", publishedDate : "11-05-2023" },
+    { id: 1105202304, title: "Book4", author : "Md. Salim", publishedDate : "11-05-2023" },];
 
 // Route to serve the static index.html file
 app.get('/', (req, res) => {
